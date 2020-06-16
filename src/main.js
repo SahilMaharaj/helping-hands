@@ -3,6 +3,8 @@ import NProgress from "nprogress";
 import '~/assets/custom-nprogress.css';
 
 export default function (Vue, { router, head, isClient }) {
+  NProgress.configure({showSpinner: false});
+  
   router.beforeEach((to, from, next) => {
     if (!to.hash && typeof document !== "undefined") {
         NProgress.start();
