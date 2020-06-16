@@ -1,6 +1,6 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import NProgress from "nprogress";
-import "nprogress/nprogress.css";
+import '~/assets/custom-nprogress.css';
 
 export default function (Vue, { router, head, isClient }) {
   router.beforeEach((to, from, next) => {
