@@ -1,9 +1,6 @@
 <template>
   <Layout>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
     <h1>Hello, world!</h1>
 
     <p>
@@ -21,17 +18,13 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Helping Hands',
+    titleTemplate: '%s | Gridsome'
   }
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
+<style scoped>
 
-.layout {
-  background: purple;
-}
+
 </style>

@@ -6,5 +6,30 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Cities', // Required
+        baseDir: './cities', // Where .md files are located
+        pathPrefix: '/cities', // Add route prefix. Optional
+        template: './src/templates/Cities.vue', // Optional
+      }
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Organisations', // Required
+        baseDir: './organisations', // Where .md files are located
+        refs: {
+          locations: {
+            typeName: 'Locations',
+            create: true
+          }
+        },
+        pathPrefix: '/organisations', // Add route prefix. Optional
+        template: './src/templates/Organisations.vue', // Optional
+      }
+    }
+  ]
 }
