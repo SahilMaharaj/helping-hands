@@ -1,7 +1,7 @@
 ---
 title: Living - Animal Sanctuary
 desc: If you would like to volunteer for a charity that directly supports older people who might be lonely, take a look at our various available programs.
-locations: Riverside
+locations: [Riverside, San Francisco]
 ---
 
 ## Living - Animal Sanctuary

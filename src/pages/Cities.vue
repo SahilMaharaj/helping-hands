@@ -5,7 +5,7 @@
             
             <ul>
                 <li v-for="city in $page.cities.edges" :key="city.id">
-                    {{ city.node.title }}
+                   <g-link :to="city.node.path">{{ city.node.title }}</g-link>
                 </li>
             </ul>
 
@@ -20,6 +20,7 @@ query Cities {
             node {
                 title
                 id
+                path
             }
         }
     }

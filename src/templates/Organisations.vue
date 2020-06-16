@@ -17,12 +17,6 @@ query Organisations ($path: String!) {
 }
 </page-query>
 
-<script>
-    export default {
-        
-    }
-</script>
-
 <style>
 
 </style>

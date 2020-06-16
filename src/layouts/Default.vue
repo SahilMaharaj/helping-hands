@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div class="layout">
+    <div>
       <slot/>
     </div>
     <Footer />
@@ -22,18 +22,18 @@ export default {
 
 <style>
 body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
   margin:0;
   padding:0;
   line-height: 1.5;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
+h1, h2, h3 {
+  font-family: Rubik, sans-serif;
 }
 
-.layout {
-  max-width: 940px;
-  margin: 0 auto;
-  width: 100%;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 </style>
