@@ -110,6 +110,7 @@
     @media all and (max-width : 767px) {
         .banner-content-wrapper {
             max-width: 400px;
+            padding: 20px;
         }
     }
 

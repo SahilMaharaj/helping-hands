@@ -26,7 +26,7 @@
                     <span>&#9776;</span>
                 </label>
                 <div class="header-cta-btn">
-                    <g-link class="header-cta" href="#">Get Started</g-link>
+                    <g-link class="header-cta" to="/cities/">Get Started</g-link>
                 </div>
             </header>
         </div>
