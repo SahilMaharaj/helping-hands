@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="copyright">
-                Copyright © <a href="#">Studio Corvus</a> Powered by <a href="#">Gridsome</a> Built by Sahil Maharaj
+                Powered by <a href="#">Gridsome</a> Built by Sahil Maharaj
             </div>
         </div>
     </footer>

@@ -20,16 +20,20 @@
 
 
     <InformationBanner />
+
+    <Faqs />
   </Layout>
   </div>
 </template>
 
 <script>
 import InformationBanner from '~/components/InformationBanner.vue'
+import Faqs from '~/components/Faqs.vue'
 
 export default {
   components: {
-    InformationBanner
+    InformationBanner,
+    Faqs
   },
   metaInfo: {
     title: 'Helping Hands',

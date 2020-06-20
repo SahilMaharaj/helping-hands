@@ -16,7 +16,7 @@
                             <li><g-link to="/about-us/">About Us</g-link></li>
                             <div class="border-seperator">
                                 <ul class="bordered-items">
-                                    <li><g-link to="/faq/">FAQ</g-link></li>
+                                    <li><g-link to="/frequently-asked/">FAQ</g-link></li>
                                     <li class="last-item"><g-link to="/contact-us/">Contact Us</g-link></li>
                                 </ul>
                             </div>
