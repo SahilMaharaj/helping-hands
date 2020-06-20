@@ -11,24 +11,23 @@
                     <g-link class="banner-btn" to="/information/">Learn More</g-link>
                 </div>
             </div>
+            <g-image class="image-itself" src="~/assets/images/woman-giving-a-high-five.jpg"></g-image>
             <div class="image-overlay"></div>
         </div>
     </div>
 </template>
 
-<script>
-    export default {
-        
-    }
-</script>
-
 <style scoped>
     .image-section {
-        background-image: url('~@/assets/images/woman-giving-a-high-five.jpg');
         position: relative;
-        background-position: 50% 50%;
-        background-size: cover;
         height: 600px;
+    }
+
+    .image-itself {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        position: absolute;
     }
 
     .image-overlay {
@@ -116,6 +115,10 @@
 
     @media all and (max-width : 479px) {
         .image-section {
+            height: 445px;
+        }
+
+        .image-itself {
             height: 445px;
         }
         

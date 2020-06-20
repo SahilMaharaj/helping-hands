@@ -167,10 +167,6 @@ nav {
 }
 /*----- MEDIA QUERIES -----*/
 @media all and (max-width : 991px) {
-    .header-wrapper {
-        position: relative !important;
-    }
-
     header {
         height: 100%;
     }
