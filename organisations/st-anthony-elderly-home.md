@@ -1,6 +1,6 @@
 ---
 title: St Anthony Elderly Home
-desc: If you would like to volunteer for a charity that directly supports older people who might be lonely, take a look at our various available programs.
+desc: If you would like to St Anthony for a charity that directly supports older people who might be lonely, take a look at our various available programs.
 locations: Riverside
 ---
 
