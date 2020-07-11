@@ -34,6 +34,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-flexsearch',
       options: {
+        searchFields: ['title', 'desc'],
         collections: [
           {
             typeName: 'Cities',
@@ -45,8 +46,7 @@ module.exports = {
             indexName: 'Organisations',
             fields: ['title', 'desc']
           }
-        ],
-        searchFields: ['title', 'desc']      
+        ]      
       }
     }
   ]
