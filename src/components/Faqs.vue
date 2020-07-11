@@ -22,7 +22,7 @@
                     </FaqAccordion>
                 </div>
                 <div class="view-all-faqs">
-                    <g-link to="/faq/">View All FAQs <g-image width="14" src='~/assets/images/right-arrow.svg'></g-image></g-link>
+                    <g-link to="/frequently-asked/">View All FAQs <g-image width="14" src='~/assets/images/right-arrow.svg'></g-image></g-link>
                 </div>
             </div>
         </div>

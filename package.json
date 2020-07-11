@@ -9,6 +9,7 @@
   "dependencies": {
     "@gridsome/vue-remark": "^0.2.1",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-flexsearch": "^1.0.1",
     "nprogress": "^0.2.0"
   }
 }

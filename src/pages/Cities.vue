@@ -8,7 +8,7 @@
                    <g-link :to="city.node.path">{{ city.node.title }}</g-link>
                 </li>
             </ul>
-
+            <StartVolunteering />
         </div>
     </Layout>
 </template>
@@ -28,8 +28,12 @@ query Cities {
 </page-query>
 
 <script>
+import StartVolunteering from '~/components/StartVolunteering.vue'
+
     export default {
-        
+        components: {
+            StartVolunteering
+        }
     }
 </script>
 

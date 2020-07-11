@@ -30,6 +30,24 @@ module.exports = {
         pathPrefix: '/organisations', // Add route prefix. Optional
         template: './src/templates/Organisations.vue', // Optional
       }
+    },
+    {
+      use: 'gridsome-plugin-flexsearch',
+      options: {
+        searchFields: ['title', 'desc'],
+        collections: [
+          {
+            typeName: 'Cities',
+            indexName: 'Cities',
+            fields: ['title', 'desc']
+          },
+          {
+            typeName: 'Organisations',
+            indexName: 'Organisations',
+            fields: ['title', 'desc']
+          }
+        ]      
+      }
     }
   ]
 }
