@@ -40,12 +40,7 @@ module.exports = {
             typeName: 'Cities',
             indexName: 'Cities',
             fields: ['title', 'desc']
-          },
-          {
-            typeName: 'Organisations',
-            indexName: 'Organisations',
-            fields: ['title', 'desc']
-          }
+          }          
         ]      
       }
     }
