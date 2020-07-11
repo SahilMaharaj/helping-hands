@@ -1,9 +1,3 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
 module.exports = {
   siteName: 'Gridsome',
   plugins: [
@@ -21,14 +15,14 @@ module.exports = {
       options: {
         typeName: 'Organisations', // Required
         baseDir: './organisations', // Where .md files are located
+        pathPrefix: '/organisations', // Add route prefix. Optional
+        template: './src/templates/Organisations.vue', // Optional        
         refs: {
           locations: {
             typeName: 'Locations',
             create: true
           }
-        },
-        pathPrefix: '/organisations', // Add route prefix. Optional
-        template: './src/templates/Organisations.vue', // Optional
+        }        
       }
     },
     {
