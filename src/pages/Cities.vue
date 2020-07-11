@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <div>
-            <h1>Cities</h1>
+            <h1>Cities Page</h1>
             
             <ul>
                 <li v-for="city in $page.cities.edges" :key="city.id">
