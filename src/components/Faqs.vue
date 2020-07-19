@@ -53,7 +53,7 @@
             </div>
             <div >
                 <div class="customer-service-image">
-                    <g-image fit="cover" quality="100" src="~/assets/images/customer-service-agent.jpg"></g-image>
+                    <g-image width="480" quality="100" src="~/assets/images/customer-service-agent.jpg"></g-image>
                 </div>
                 <div class="customer-service-title">
                     <div class="line"></div>

@@ -14,7 +14,7 @@
       </div>
 
 
-      <g-image quality="100" class="search-banner" src="~/assets/images/parents-teaching-kid-to-ride-bike.jpg"></g-image>
+      <g-image class="search-banner" src="~/assets/images/parents-kid-bike-ride.jpg"></g-image>
       <div class="image-overlay"></div>
     </div>
 
@@ -39,7 +39,7 @@
     <InformationBanner />
     <section id="how-it-works">
       <TextImageOverlay 
-      imageUrl="group-discussions.jpg"
+      imageUrl="group-on-stairs.jpg"
       textOne="Varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor."
       textTwo="Viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae."
       textThree="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."

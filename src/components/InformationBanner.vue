@@ -11,7 +11,7 @@
                     <g-link class="banner-btn" to="/information/">Learn More</g-link>
                 </div>
             </div>
-            <g-image class="image-itself" src="~/assets/images/woman-giving-a-high-five.jpg"></g-image>
+            <g-image class="image-itself" src="~/assets/images/high-five.jpg"></g-image>
             <div class="image-overlay"></div>
         </div>
     </div>
