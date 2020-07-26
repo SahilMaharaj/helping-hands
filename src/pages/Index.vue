@@ -14,7 +14,7 @@
       </div>
 
 
-      <g-image class="search-banner" src="~/assets/images/parents-kid-bike-ride.jpg"></g-image>
+      <g-image immediate="true" class="search-banner" src="~/assets/images/parents-kid-bike-ride.jpg"></g-image>
       <div class="image-overlay"></div>
     </div>
 
