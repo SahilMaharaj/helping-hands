@@ -76,7 +76,7 @@
 
 @media all and (max-width : 479px) {
     #search {
-      font-size: 12px;
+      font-size: 16px;
     }
 
     #search-btn {
