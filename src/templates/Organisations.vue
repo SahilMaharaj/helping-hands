@@ -6,7 +6,7 @@
             
             <div id="org-form">
                <form action="https://www.form-data.com/_functions/submit/ophk4d66zcnl4r9ox6sr" method="post" >
-                  <input name="organisation" :value="$page.organisations.title">
+                  <input type="text" name="organisation" :value="$page.organisations.title">
                   <p><input type="text" name="name" required="required" placeholder="Full Name"/></p>
                   <p><input type="text" required="required" name="email" placeholder="Email"/></p>
                   <p><textarea name="Comments" required="required" id="comments" cols="40" rows="6" placeholder="Comments"></textarea></p>
