@@ -11,11 +11,13 @@
             <SearchPosts class="search-input" />
           </div>
         </div>
+        <g-image class="white-dots" src="~/assets/images/white-dots.svg"></g-image>
       </div>
 
 
       <g-image class="search-banner" src="~/assets/images/parents-kid-bike-ride.jpg"></g-image>
       <div class="image-overlay"></div>
+      
     </div>
 
 

@@ -6,6 +6,7 @@
             v-model="searchTerm" 
             type="search"
             name="searchText"
+            required="required"
             placeholder="Find a Locations & Organisations...">
             <button id="search-btn" @click.stop.prevent="submit()">
                 <g-image width="25" src="~/assets/images/magnifying-glass.svg"></g-image> 
