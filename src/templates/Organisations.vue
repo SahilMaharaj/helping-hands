@@ -7,9 +7,9 @@
             <div id="org-form">
                <form action="https://www.form-data.com/_functions/submit/ophk4d66zcnl4r9ox6sr" method="post" >
 
-                  <p><input type="text" name="email" placeholder="Full Name"/></p>
-                  <p><input type="text" name="email" placeholder="Email"/></p>
-                  <p><textarea name="Comments" id="comments" cols="40" rows="6" placeholder="Comments"></textarea></p>
+                  <p><input type="text" name="name" required="required" placeholder="Full Name"/></p>
+                  <p><input type="text" required="required" name="email" placeholder="Email"/></p>
+                  <p><textarea name="Comments" required="required" id="comments" cols="40" rows="6" placeholder="Comments"></textarea></p>
                   <button type="submit" value="Submit">Submit</button>
                </form>
             </div>
