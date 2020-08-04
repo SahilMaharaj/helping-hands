@@ -6,7 +6,7 @@
             
             <div id="org-form">
                <form action="https://www.form-data.com/_functions/submit/ophk4d66zcnl4r9ox6sr" method="post" >
-                  <label for="orgname" name="organisation"><strong>{{ $page.organisations.title }}</strong></label>
+                  <input type="radio" id="organisation" name="organisation" :value="$page.organisations.title"/>
 
                   <p><input type="text" name="name" required="required" placeholder="Full Name"/></p>
 
@@ -32,5 +32,7 @@ query Organisations ($path: String!) {
 </page-query>
 
 <style>
-
+  #organisation {
+    display: none;
+  }
 </style>
