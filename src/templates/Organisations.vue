@@ -6,7 +6,7 @@
             
             <div id="org-form">
                <form action="https://www.form-data.com/_functions/submit/ophk4d66zcnl4r9ox6sr" method="post" >
-                  <input type="radio" id="organisation" name="organisation" :value="$page.organisations.title"/>
+                  <input type="text" id="organisation" name="organisation" :value="$page.organisations.title" readonly/>
 
                   <p><input type="text" name="name" required="required" placeholder="Full Name"/></p>
 
