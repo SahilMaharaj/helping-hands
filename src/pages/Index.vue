@@ -11,13 +11,11 @@
             <SearchPosts class="search-input" />
           </div>
         </div>
-        <g-image class="white-dots" src="~/assets/images/white-dots.svg"></g-image>
       </div>
 
-
-      <g-image class="search-banner" src="~/assets/images/parents-kid-bike-ride.jpg"></g-image>
-      <div class="image-overlay"></div>
-      
+        <g-image class="search-banner" src="~/assets/images/parents-kid-bike-ride.jpg"></g-image>
+        <div class="image-overlay"></div>
+        <g-image class="white-dots" src="~/assets/images/white-dots.svg"></g-image>
     </div>
 
 
@@ -85,6 +83,7 @@ export default {
 <style scoped>
   #home-search-banner {
     position: relative;
+    overflow: hidden;
     height: 80vh;
   }
   
@@ -101,6 +100,17 @@ export default {
     width: 100%;
     color: #fff;
     height: 100%;
+  }
+
+  .white-dots {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    opacity: 0.25;
+    left: auto;
+    top: auto;
+    right: -20%;
+    bottom: -58%;
   }
 
   .search-text-wrapper  {
@@ -195,6 +205,12 @@ export default {
       padding-left: 40px;
       max-width: 560px;
     }
+
+    .white-dots {
+      width: auto;
+      height: 530px;
+      opacity: 0.2;
+    }
   }
 
 
@@ -202,6 +218,12 @@ export default {
     .pop-cities {
       flex-direction: column;
       padding: 40px 30px;
+    }
+
+    .white-dots {
+      right: -40%;
+      bottom: -70%;
+      opacity: 0.1;
     }
 
      .pop-cities-tagline {
