@@ -76,7 +76,7 @@ export default {
       {
         rel: 'preload',
         as: 'image',
-        href: '/assets/static/src/assets/images/parents-kid-bike-ride.jpg'
+        href: '~/assets/images/parents-kid-bike-ride.jpg'
       }
    ]
   },
