@@ -1,7 +1,6 @@
 <template>
   <div>
   <Layout>
-    
     <div id="home-search-banner">
       <div class="search-banner-text">
         <div class="search-text-wrapper">
@@ -12,16 +11,13 @@
           </div>
         </div>
       </div>
-
         <g-image class="search-banner" src="~/assets/images/parents-kid-bike-ride.jpg"></g-image>
         <div class="image-overlay"></div>
         <g-image class="white-dots" src="~/assets/images/white-dots.svg"></g-image>
     </div>
-
-
     <div class="pop-cities">
       <div class="pop-cities-tagline">
-        Most Popular Cities:        
+        Most Popular Cities:       
       </div>
       <ul>
         <li><g-link to="/cities/oakland/">Oakland</g-link></li>
@@ -32,10 +28,8 @@
       </ul> 
     </div>
 
-
-
-
-
+    <WhyStartVolunteering theme="light-checklist-block"/>
+    
     <InformationBanner />
     <section id="how-it-works">
       <TextImageOverlay 
@@ -58,6 +52,7 @@
 
 <script>
 import SearchPosts from '~/components/SearchPosts.vue'
+import WhyStartVolunteering from '~/components/WhyStartVolunteering.vue'
 import InformationBanner from '~/components/InformationBanner.vue'
 import StoriesBanner from '~/components/StoriesBanner.vue'
 import StartVolunteering from '~/components/StartVolunteering.vue'
@@ -67,6 +62,7 @@ import TextImageOverlay from '~/components/TextImageOverlay.vue'
 export default {
   components: {
     SearchPosts,
+    WhyStartVolunteering,
     InformationBanner,
     StoriesBanner,
     StartVolunteering,
@@ -75,8 +71,16 @@ export default {
   },
   metaInfo: {
     title: 'Helping Hands',
-    titleTemplate: '%s | Gridsome'
-  }
+    titleTemplate: '%s | Gridsome',
+    link: [
+      {
+        rel: 'preload',
+        as: 'image',
+        href: '/assets/static/src/assets/images/parents-kid-bike-ride.jpg'
+      }
+   ]
+  },
+  
 }
 </script>
 

@@ -73,5 +73,5 @@
         .accordion.active .acc-answer{
             max-height: 24em;
     }
-    }
+}
 </style>
