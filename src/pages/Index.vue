@@ -6,12 +6,12 @@
         <div class="search-text-wrapper">
           <div class="search-text-positioning">
             <h1>Make a difference. Start volunteering close to home.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristiques</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristiques.</p>
             <SearchPosts class="search-input" />
           </div>
         </div>
       </div>
-        <g-image class="search-banner" src="~/assets/images/parents-kid-bike-ride.jpg"></g-image>
+        <g-image class="search-banner" :src="image"></g-image>
         <div class="image-overlay"></div>
         <g-image class="white-dots" src="~/assets/images/white-dots.svg"></g-image>
     </div>
@@ -58,6 +58,7 @@ import StoriesBanner from '~/components/StoriesBanner.vue'
 import StartVolunteering from '~/components/StartVolunteering.vue'
 import Faqs from '~/components/Faqs.vue'
 import TextImageOverlay from '~/components/TextImageOverlay.vue'
+import HeroImage from '~/assets/images/parents-kid-bike-ride.jpg'
 
 export default {
   components: {
@@ -69,16 +70,23 @@ export default {
     Faqs,
     TextImageOverlay
   },
-  metaInfo: {
-    title: 'Helping Hands',
-    titleTemplate: '%s | Gridsome',
-    link: [
-      {
-        rel: 'preload',
-        as: 'image',
-        href: '/assets/static/parents-kid-bike-ride.jpg'
-      }
-   ]
+  data() {
+    return {
+      image: HeroImage
+    } 
+  },
+  metaInfo() {
+    return {
+      title: 'Helping Hands',
+      titleTemplate: '%s | Gridsome',
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: this.image
+        }
+      ]
+    }
   },
   
 }
