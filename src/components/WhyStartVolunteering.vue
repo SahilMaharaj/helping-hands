@@ -51,7 +51,7 @@
                             Interested?
                         </div>
                         <div class="cta-btn">
-                            <g-link to="/cities/">Get Started <g-image width="15" src="~/assets/images/cta-btn-arrow.svg"></g-image></g-link>
+                            <g-link to="/cities/" class="cta-btn">Get Started <g-image width="15" src="~/assets/images/cta-btn-arrow.svg"></g-image></g-link>
                         </div>
                     </div>
                 </div>
@@ -82,15 +82,14 @@
     .dark-checklist-item ul li{
         border-bottom-color: hsla(0, 0%, 100%, 0.1) !important;
     }
-/*----- DARK THEME BLOCK -----*/
-    
+/*----------------------------*/    
     .section {
         overflow: hidden;
         padding: 90px 0;
     }
 
     .container {
-        max-width: 960px;
+        max-width: 940px;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -129,8 +128,8 @@
         font-weight: 400;
     }
 
-    .column-right {
-        padding-left: 60px;
+    .column-left {
+        padding-right: 60px;
     }
 
     .light-checklist-block {
@@ -168,7 +167,7 @@
         align-items: center;
     }
 
-    .interested, .cta-btn {
+    .interested {
         flex: 1;
     }
 
@@ -183,7 +182,6 @@
     }
 
     .cta-btn a {
-        display: flex;
         cursor: pointer;
         text-decoration: none;
         align-items: center;
@@ -193,7 +191,7 @@
         border-radius: 0;
         color: #fff;
         font-size: 16px;
-        padding: 12px 15px 12px 40px;
+        padding: 12px 15px 12px 35px;
         box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.11);
         -webkit-transition: color 200ms ease, background-color 200ms ease, box-shadow 200ms ease, -webkit-filter 200ms ease;
         transition: color 200ms ease, background-color 200ms ease, box-shadow 200ms ease, -webkit-filter 200ms ease;
@@ -204,5 +202,65 @@
     .cta-btn img {
         margin-left: 20px;
     }
-    
+/*----- MEDIA QUERIES -----*/
+    @media all and (max-width : 991px) {
+        .section {
+            padding: 80px 50px;
+        }
+
+        .container {
+            max-width: 728px;
+        }
+
+        .column-left {
+            padding-right: 40px;
+        }
+
+        .heading {
+            font-size: 43px;
+            line-height: 50px;
+        }
+
+        .light-checklist-block {
+            padding: 25px;
+        }
+
+        .column-left p {
+            width: 100%;
+        }
+
+        .cta-btn a {
+            padding: 12px 15px 12px 18px;
+        }
+
+        .cta-btn img {
+            margin-left: 12px;
+        }
+
+        .interested {
+            font-size: 18px;
+        }
+    }
+    @media all and (max-width : 767px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .section {
+            padding: 0;
+        }
+
+        .light-checklist-block {
+            padding: 30px;
+            box-shadow: 7px 7px 60px -20px rgba(0, 0, 0, 0.1);
+        }
+
+        .column-left {
+            padding: 40px 30px;
+        }
+
+        .column-right {
+            width: 100%;
+        }
+    }
 </style>
