@@ -16,25 +16,33 @@
                                 <div class="check-text">
                                     <strong>Do good</strong> for others and the community
                                 </div>
-                                
+                                <div class="check-icon">
+                                    <g-image width="20" height="20" src="~/assets/images/checkmark-circle.svg"></g-image>
+                                </div>
                             </li>
                             <li>
                                 <div class="check-text">
                                     Volunteering <strong>increases self-confidence</strong>
                                 </div>
-                                
+                                <div class="check-icon">
+                                    <g-image width="20" height="20" src="~/assets/images/checkmark-circle.svg"></g-image>
+                                </div>
                             </li>
                             <li>
                                 <div class="check-text">
                                     <strong>Make a difference</strong> to the lives of others
                                 </div>
-                                
+                                <div class="check-icon">
+                                    <g-image width="20" height="20" src="~/assets/images/checkmark-circle.svg"></g-image>
+                                </div>
                             </li>
                             <li>
                                 <div class="check-text">
                                     <strong>Feel valued</strong> and part of the team
                                 </div>
-                                
+                                <div class="check-icon">
+                                    <g-image width="20" height="20" src="~/assets/images/checkmark-circle.svg"></g-image>
+                                </div>
                             </li>
                         </ul>
                     </div>
