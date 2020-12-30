@@ -158,8 +158,13 @@
 
     .check-icon {
         flex: 1;
+        height: 20px;
         display: flex;
         justify-content: flex-end;
+    }
+
+    .check-icon img {
+        height: 20px;
     }
 
     .check-text {
