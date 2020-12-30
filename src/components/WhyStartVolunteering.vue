@@ -145,15 +145,16 @@
 
     .checklist-item ul {
         list-style: none;
-        padding: 0;
-        margin: 0;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .checklist-item ul li {
         display: flex;
-        margin: 23px 0 !important;
+        padding: 23px 0;
         border-bottom: 1px solid #ebebeb;
         align-items: center;
+        line-height: 1.5 !important;
     }
 
     .check-icon {
