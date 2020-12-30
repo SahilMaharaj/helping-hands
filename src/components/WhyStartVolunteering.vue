@@ -154,6 +154,7 @@
         padding: 23px 0;
         border-bottom: 1px solid #ebebeb;
         align-items: center;
+        line-height: 1.5;
     }
 
     .check-icon {
