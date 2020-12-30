@@ -151,14 +151,13 @@
 
     .checklist-item ul li {
         display: flex;
-        padding: 23px 0;
+        margin: 23px 0 !important;
         border-bottom: 1px solid #ebebeb;
         align-items: center;
     }
 
     .check-icon {
         flex: 1;
-        width: 20px !important;
         display: flex;
         justify-content: flex-end;
     }
