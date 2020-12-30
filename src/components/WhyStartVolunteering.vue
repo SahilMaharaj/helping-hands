@@ -141,6 +141,8 @@
 
      .checklist-item {
         font-size: 17px;
+        padding: 0;
+        margin: 0;
     }
 
     .checklist-item ul {
@@ -154,7 +156,6 @@
         padding: 23px 0;
         border-bottom: 1px solid #ebebeb;
         align-items: center;
-        margin: 0;
     }
 
     .check-icon {
