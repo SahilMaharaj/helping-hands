@@ -151,6 +151,7 @@
 
     .checklist-item ul li {
         display: flex;
+        padding: 23px 0;
         border-bottom: 1px solid #ebebeb;
     }
 
@@ -158,6 +159,10 @@
         flex: 1;
         display: flex;
         justify-content: flex-end;
+    }
+
+    .check-text {
+        flex: 11;
     }
 
     .checklist-cta {
