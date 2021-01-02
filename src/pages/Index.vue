@@ -27,13 +27,13 @@
         <li><g-link to="/cities/san-francisco/">San Francisco</g-link></li>
       </ul> 
     </div>
-
-    <WhyStartVolunteering theme="light-checklist-block"/>
     
+    <WhyStartVolunteering theme="light-checklist-block"/>
+  
     <InformationBanner />
     <section id="how-it-works">
       <TextImageOverlay 
-      imageUrl="group-on-stairs.jpg"
+      imageUrl="stair-masters.jpg"
       textOne="Varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor."
       textTwo="Viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae."
       textThree="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."

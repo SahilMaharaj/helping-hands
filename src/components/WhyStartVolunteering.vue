@@ -56,7 +56,8 @@
                     </div>
                 </div>
             </div>    
-
+            <g-image class="bg-shape" src="~/assets/images/curvy-bkg-shape.svg"></g-image>
+            <g-image class="bg-shape-dots" src="~/assets/images/dark-dots.svg"></g-image>
         </div>
     </div>
 </template>
@@ -89,10 +90,35 @@
     }
 
     .container {
+        position: relative;
         max-width: 940px;
         margin: 0 auto;
         display: flex;
         align-items: center;
+    }
+
+    .bg-shape {
+        position: absolute;
+        left: auto;
+        right: -2%;
+        top: 15%;
+        bottom: auto; 
+        height: 900px;
+        opacity: 0.07;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .bg-shape-dots {
+        position: absolute;
+        width: auto;
+        height: 400px;
+        left: auto;
+        top: -10%;
+        right: -15%;
+        bottom: auto;
+        z-index: -1;
+        opacity: 0.04;
     }
 
     .title-wrapper {
@@ -126,10 +152,6 @@
         font-size: 50px;
         line-height: 54px;
         font-weight: 400;
-    }
-
-    .column-left {
-        padding-right: 60px;
     }
 
     .light-checklist-block {
@@ -254,6 +276,14 @@
     @media all and (max-width : 767px) {
         .container {
             flex-direction: column;
+        }
+
+        .bg-shape {
+            display: none;
+        }
+
+        .bg-shape-dots {
+            height: 280px;
         }
 
         .section {
