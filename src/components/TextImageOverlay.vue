@@ -33,7 +33,7 @@
 
 <style scoped>
     .main-container {
-        padding: 0 50px;
+        padding: 0 50px 90px 50px;
     }
     
     #image-container {

@@ -45,10 +45,31 @@
       imageUrl="group-on-stairs.jpg"
       textOne="Varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor."
       textTwo="Viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae."
-      textThree="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
-      >
+      textThree="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.">
       </TextImageOverlay>
     </section>
+    <section id="single-story">
+      <div class="story-wrapper">
+        <div class="story-image">
+          <g-link class="story-link" to="/stories/">
+            <g-image src="~/assets/images/ferdinand-dupiere.jpg"></g-image>
+            <div class="overlay-block">
+              <div class="overlay-block-wrapper">
+                Text goes here
+              </div>
+            </div>
+          </g-link>          
+        </div>
+        <div class="story-caption">
+          <div class="story-title-wrapper">
+            <div class="small-uppercase">Make A Difference</div>
+            <div class="heading">Why Start Volunteering?</div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae.</p>
+        </div>
+      </div>
+    </section>
+
     <StoriesBanner />
     <StartVolunteering />
     <Faqs />
@@ -251,28 +272,93 @@ export default {
   }
 
   .bg-shape {
-        position: absolute;
-        left: auto;
-        right: -2%;
-        top: 15%;
-        bottom: auto; 
-        height: 900px;
-        opacity: 0.07;
-        width: 100%;
-        z-index: -1;
+    position: absolute;
+    left: auto;
+    right: -2%;
+    top: 15%;
+    bottom: auto; 
+    height: 900px;
+    opacity: 0.07;
+    width: 100%;
+    z-index: -1;
     }
 
-    .bg-shape-dots {
-        position: absolute;
-        width: auto;
-        height: 400px;
-        left: auto;
-        top: -10%;
-        right: -15%;
-        bottom: auto;
-        z-index: -1;
-        opacity: 0.04;
+  .bg-shape-dots {
+    position: absolute;
+    width: auto;
+    height: 400px;
+    left: auto;
+    top: -10%;
+    right: -15%;
+    bottom: auto;
+    z-index: -1;
+    opacity: 0.04;
     }
+
+    #single-story {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 0 0 90px 0;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .story-wrapper {
+      display: flex;
+      align-items: center;
+      margin-left: -10px;
+      margin-right: -10px;      
+    }
+
+    .story-image {
+      padding: 0 10px;
+      position: relative;
+    }
+
+    .story-caption {
+      padding: 0 10px 0 50px;
+    }
+
+    .story-image, .story-caption {
+      width: 50%;
+    }
+
+    .story-image img {
+      object-fit: cover;
+      width: 100%;
+      height: 460px;
+      display: block;
+    }
+
+     .story-link {
+      position: relative;
+      display: block;
+      text-decoration: none;
+     
+    }
+
+    .story-title-wrapper {
+      margin-bottom: 30px;
+    }
+
+    .overlay-block {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.1);
+      box-shadow: 21px 21px 80px -20px rgba(0, 0, 0, 0.3);
+      -webkit-transition: background-color 200ms ease;
+      transition: background-color 200ms ease;
+      color: #fff;
+      top: 0;
+      left: 0;
+    }
+
+    .overlay-block-wrapper {
+      color: red;
+    } 
+
+   
 /*----- MEDIA QUERIES -----*/
   @media all and (max-width : 991px) {
     .search-text-positioning {
