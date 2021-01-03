@@ -100,6 +100,10 @@
             padding: 20px 20px 20px 30px;
             margin: 15px 0;
         }
+
+        .main-container {
+            padding: 0;
+        }
     }
 
     @media all and (max-width : 767px) {

@@ -31,7 +31,16 @@
     <WhyStartVolunteering theme="light-checklist-block"/>
   
     <InformationBanner />
+    
     <section id="how-it-works">
+      <div class="how-it-works-cont">
+        <div class="title-wrapper">
+          <div class="small-uppercase">Need More Information?</div>
+          <h2 class="heading">How it Works.</h2>
+        </div>
+        <g-image class="bg-shape" src="~/assets/images/curvy-bkg-shape.svg"></g-image>
+        <g-image class="bg-shape-dots" src="~/assets/images/dark-dots.svg"></g-image>
+      </div>
       <TextImageOverlay 
       imageUrl="group-on-stairs.jpg"
       textOne="Varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor."
@@ -210,7 +219,60 @@ export default {
 
   #how-it-works {
     padding: 90px 0;
+    overflow: hidden;
   }
+
+  .how-it-works-cont {
+    max-width: 940px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .title-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .small-uppercase {
+    font-family: Karla, sans-serif;
+    color: #a899aa;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .heading {
+    margin-top: 13px;
+    margin-bottom: 0px;
+    font-family: Rubik, sans-serif;
+    color: #45164b;
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 400;
+  }
+
+  .bg-shape {
+        position: absolute;
+        left: auto;
+        right: -2%;
+        top: 15%;
+        bottom: auto; 
+        height: 900px;
+        opacity: 0.07;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .bg-shape-dots {
+        position: absolute;
+        width: auto;
+        height: 400px;
+        left: auto;
+        top: -10%;
+        right: -15%;
+        bottom: auto;
+        z-index: -1;
+        opacity: 0.04;
+    }
 /*----- MEDIA QUERIES -----*/
   @media all and (max-width : 991px) {
     .search-text-positioning {
@@ -223,8 +285,20 @@ export default {
       height: 530px;
       opacity: 0.2;
     }
-  }
 
+    #how-it-works {
+      padding: 80px 50px;
+    }
+
+    .how-it-works-cont {
+      max-width: 728px;
+    }
+
+    .heading {
+      font-size: 43px;
+      line-height: 50px;
+    }
+  }
 
   @media all and (max-width : 767px) {
     .pop-cities {
@@ -267,6 +341,23 @@ export default {
 
     .search-input {
       margin-top: 30px;
+    }
+
+    .bg-shape {
+      display: none;
+    }
+
+    .bg-shape-dots {
+      height: 280px;
+    }
+
+    #how-it-works {
+      padding: 0;
+    }
+
+    .title-wrapper {
+      margin-bottom: 0px;
+      padding: 50px 30px;
     }
   }
 
