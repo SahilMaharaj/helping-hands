@@ -109,6 +109,12 @@ export default {
     return {
       title: 'Helping Hands',
       titleTemplate: '%s | Gridsome',
+      meta: [
+        {
+          name: 'description',
+          content: 'This is my helping hands description'
+        }
+      ],
       link: [
         {
           rel: 'preload',
