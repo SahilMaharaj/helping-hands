@@ -115,7 +115,7 @@ export default {
   metaInfo() {
     return {
       title: 'Helping Hands',
-      titleTemplate: '%s | Gridsome',
+      titleTemplate: '%s | Sahil Maharaj',
       meta: [
         {
           name: 'description',
