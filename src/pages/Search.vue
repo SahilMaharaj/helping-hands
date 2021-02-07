@@ -36,9 +36,9 @@
 <script>
     export default {
         data () {
-        return {
-            searchTerm: this.$route.query.q || '',
-        }
+            return {
+                searchTerm: this.$route.query.q || '',
+            }
     },
     methods: {
         submit () {

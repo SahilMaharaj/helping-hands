@@ -54,9 +54,14 @@
           <g-link class="story-link" to="/stories/">
             <g-image src="~/assets/images/ferdinand-dupiere.jpg"></g-image>
             <div class="overlay-block">
-              <div class="overlay-block-wrapper">
-                Text goes here
+              <div class="quote-and-team">
+                <div class="quote-overlay">"It is a very rewarding experience."</div>
+                  <div class="team-title-wrapper">
+                  <div class="team-line"></div>
+                  <div class="team-title">Ferdinand Dupiere, Oakland</div>
+                </div>
               </div>
+              
             </div>
           </g-link>          
         </div>
@@ -67,7 +72,9 @@
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae.</p>
         </div>
+        <g-image class="bg-shape-dots" src="~/assets/images/dark-dots.svg"></g-image>
       </div>
+      
     </section>
 
     <StoriesBanner />
@@ -302,18 +309,20 @@ export default {
     }
 
     #single-story {
-      max-width: 940px;
-      margin: 0 auto;
-      padding: 0 0 90px 0;
-      background-color: #fff;
+      position: relative;
+      padding: 90px 0 90px 0;
+      background-color: transparent;
+      margin-top: -90px;
+      z-index: -1;
       overflow: hidden;
     }
 
     .story-wrapper {
       display: flex;
+      max-width: 940px;
+      margin: 0 auto;
+      position: relative;
       align-items: center;
-      margin-left: -10px;
-      margin-right: -10px;      
     }
 
     .story-image {
@@ -360,9 +369,41 @@ export default {
       left: 0;
     }
 
-    .overlay-block-wrapper {
-      color: red;
+    .quote-and-team {
+      position: absolute;
+      left: 40px;
+      top: auto;
+      right: auto;
+      bottom: 40px;
+    }
+
+    .quote-overlay {
+      color: #fff;
+      max-width: 260px;
+      font-size: 35px;
+      line-height: 47px;
+      position: absolute;
+      top: auto;
+      right: auto;
+      bottom: 40px;
+      margin-bottom: 20px;
     } 
+
+    .team-title-wrapper {
+      display: flex;
+      align-items: center;
+      color: #8c3396;
+    }
+
+    .team-line {
+      width: 20px;
+      height: 1px;
+      margin-right: 10px;
+      background-color: #8c3396;
+    }
+
+
+/* Once you reach a smaller screen size add more padding to the how it works section and then use the padding and margin-top on the single story section to adjust spacing */
 
    
 /*----- MEDIA QUERIES -----*/
@@ -379,7 +420,7 @@ export default {
     }
 
     #how-it-works {
-      padding: 80px 50px;
+      padding: 80px 50px 200px 50px;
     }
 
     .how-it-works-cont {
@@ -389,6 +430,27 @@ export default {
     .heading {
       font-size: 43px;
       line-height: 50px;
+    }
+
+    #single-story {
+      padding: 80px 50px;
+      margin-top: -160px;
+    }
+
+    .story-wrapper {
+      max-width: 728px;
+    }
+
+    .story-caption {
+      padding: 0 10px 0 40px;
+    }
+
+    .team-title {
+      font-size: 14px;
+    }
+
+    .story-caption p {
+      margin-bottom: 0;
     }
   }
 
@@ -450,6 +512,26 @@ export default {
     .title-wrapper {
       margin-bottom: 0px;
       padding: 50px 30px;
+    }
+
+    #single-story {
+      margin-top: 0;
+      padding: 0;
+    }
+
+    .story-wrapper {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    .story-image {
+      width: 100%;
+      padding: 0;
+    }
+
+    .story-caption {
+      width: 100%;
+      padding: 40px 30px;
     }
   }
 
