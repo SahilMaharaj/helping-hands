@@ -35,7 +35,7 @@
     <section id="how-it-works">
       <div class="how-it-works-cont">
         <div class="title-wrapper">
-          <div class="small-uppercase">Need More Information?</div>
+          <div class="small-uppercase">Need More Information?</div>``
           <h2 class="heading">How it Works.</h2>
         </div>
         <g-image class="bg-shape" src="~/assets/images/curvy-bkg-shape.svg"></g-image>
@@ -105,7 +105,7 @@ export default {
     StoriesBanner,
     StartVolunteering,
     Faqs,
-    TextImageOverlay
+    TextImageOverlay   
   },
   data() {
     return {
@@ -119,7 +119,7 @@ export default {
       meta: [
         {
           name: 'description',
-          content: 'This is my helping hands description'
+          content: 'This is my helping hands description.'
         }
       ],
       link: [
@@ -127,6 +127,10 @@ export default {
           rel: 'preload',
           as: 'image',
           href: this.image
+        },
+        {
+          rel: 'canonical',
+          href: '/'
         }
       ]
     }
