@@ -4,7 +4,7 @@
             <header>
                 <div class="logo">
                     <g-link to="/"> 
-                        <g-image width="200" :src="logo"></g-image>
+                        <g-image width="200" src="~/assets/images/helping-hands-logo.svg"></g-image>
                     </g-link>
                 </div>
                 <input type="checkbox" id="nav-toggle" class="nav-toggle" />
@@ -32,29 +32,6 @@
         </div>
     </div>
 </template>
-
-<script>
-import SiteLogo from '~/assets/images/helping-hands-logo.svg'
-
-export default {
-    data() {
-        return {
-            logo: SiteLogo
-        }
-    },
-    metaInfo() {
-        return {
-            link: [
-                {
-                    rel: 'preload',
-                    as: 'image',
-                    href: this.logo
-                }
-            ]
-        }
-    }
-}
-</script>
 
 <style scoped>
 /*----- DESKTOP -----*/
