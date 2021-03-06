@@ -27,6 +27,7 @@
     .hero {
         position: relative;
         color: red;
+        overflow: hidden;
     }
 
     .banner-copy {
@@ -106,6 +107,7 @@
        height: 530px !important;
        opacity: 0.2;
        bottom: -58%;
+       object-fit: fill !important;
     }
 }
 
@@ -133,7 +135,7 @@
 
     .dots-overlay {
         opacity: 0.1;
-        right: -40px;
+        right: -144px;
         bottom: -70%;
     }
     
