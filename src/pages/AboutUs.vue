@@ -1,5 +1,8 @@
 <template>
   <Layout>
+    <SubPageHero heading="We are together." :hasoverlay="false">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
+    </SubPageHero>
     <h1>About us</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
 
@@ -12,9 +15,27 @@
 </template>
 
 <script>
+import SubPageHero from '~/components/SubPageHero.vue'
+
 export default {
+  components: {
+    SubPageHero
+  },
   metaInfo: {
-    title: 'About us'
+    title: 'About us',
+    titleTemplate: '%s | Helping Hands',
+    meta: [
+      {
+        name: 'description',
+        content: 'This is the About Us page.'
+      }
+    ],
+    link: [
+      {
+        rel: 'canonical',
+        href: 'https://gridsome-helpinghands.netlify.app/about-us/'
+      }
+    ]
   },
   data() {
     return {

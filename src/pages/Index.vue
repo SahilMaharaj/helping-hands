@@ -130,7 +130,7 @@ export default {
         },
         {
           rel: 'canonical',
-          href: '/'
+          href: 'https://gridsome-helpinghands.netlify.app/'
         }
       ]
     }

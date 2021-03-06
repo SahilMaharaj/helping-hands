@@ -4,13 +4,13 @@
             <div class="banner-copy">
                 <div class="hero-text">
                     <div class="hero-text-wrapper">
-                        <h1>Make a difference.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique</p>
+                        <h1>{{ heading }}</h1>
+                        <p><slot></slot></p>
                     </div>                    
                 </div>
                 <g-image class="dots-overlay" src="~/assets/images/white-dots.svg"></g-image>
-                <div class="hero-overlay"></div> 
-                <g-image class="hero-image" src="~/assets/images/camera-crew.jpg"></g-image>  
+                <div v-if="hasoverlay" class="hero-overlay"></div> 
+                <g-image v-if="hasimg" class="hero-image" :src="require(`~/assets/images/${image}`)"></g-image>  
                              
             </div>                
         </div>
@@ -19,15 +19,26 @@
 
 <script>
     export default {
-        
+        props : {
+            heading: String,
+            image: String,
+            hasimg: {
+                type: Boolean,
+                default: false
+            },
+            hasoverlay: {
+                type: Boolean,
+                default: true
+            }
+        }        
     }
 </script>
 
 <style scoped>
     .hero {
         position: relative;
-        color: red;
         overflow: hidden;
+        background-color: #45164b;
     }
 
     .banner-copy {

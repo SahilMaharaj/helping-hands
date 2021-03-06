@@ -23,5 +23,16 @@ router.afterEach((to, from) => {
     rel: 'stylesheet preload',
     as: 'style',
     href: 'https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@300;400;500&display=swap'
-  })
+  }),
+  head.meta.push (
+    {
+      name: 'author',
+      content: 'Sahil Maharaj'
+    },
+    {
+      name: 'robots',
+      content: 'index, follow'
+    }
+  ),
+  head.htmlAttrs = {lang: 'en-ZA'}
 }
