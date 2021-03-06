@@ -1,6 +1,12 @@
 <template>
     <Layout>
         <div>
+            <SubPageHero />
+
+
+
+
+
             <h1>Cities Page</h1>
             
             <ul>
@@ -29,10 +35,12 @@ query Cities {
 
 <script>
 import StartVolunteering from '~/components/StartVolunteering.vue'
+import SubPageHero from '~/components/SubPageHero.vue'
 
     export default {
         components: {
-            StartVolunteering
+            StartVolunteering,
+            SubPageHero
         }
     }
 </script>

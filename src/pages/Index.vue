@@ -5,7 +5,7 @@
       <div class="search-banner-text">
         <div class="search-text-wrapper">
           <div class="search-text-positioning">
-            <h1>Make a difference. Start volunteering closer to home.</h1>
+            <h1>Make a difference. Start volunteering close to home.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristiques.</p>
             <SearchPosts class="search-input" />
           </div>
