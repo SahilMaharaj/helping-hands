@@ -1,9 +1,7 @@
 <template>
     <Layout>
         <div>
-            <SubPageHero heading="Make a difference." image="camera-crew.jpg" :hasimg="true">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
-            </SubPageHero>
+            <CitiesHero />
             <h1>Cities Page</h1>            
             <ul>
                 <li v-for="city in $page.cities.edges" :key="city.id">
@@ -31,12 +29,12 @@ query Cities {
 
 <script>
 import StartVolunteering from '~/components/StartVolunteering.vue'
-import SubPageHero from '~/components/SubPageHero.vue'
+import CitiesHero from '~/components/hero-components/CitiesHero.vue'
 
     export default {
         components: {
             StartVolunteering,
-            SubPageHero
+            CitiesHero
         },
         metaInfo() {
             return {

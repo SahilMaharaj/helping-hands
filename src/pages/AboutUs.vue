@@ -1,8 +1,9 @@
 <template>
   <Layout>
-    <SubPageHero heading="We are together." :hasoverlay="false">
+    <ImagelessHero heading="We are together.">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
-    </SubPageHero>
+    </ImagelessHero>
+
     <h1>About us</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
 
@@ -15,11 +16,11 @@
 </template>
 
 <script>
-import SubPageHero from '~/components/SubPageHero.vue'
+import ImagelessHero from '~/components/hero-components/ImagelessHero.vue'
 
 export default {
   components: {
-    SubPageHero
+    ImagelessHero
   },
   metaInfo: {
     title: 'About us',

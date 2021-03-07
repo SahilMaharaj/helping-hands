@@ -1,9 +1,9 @@
 <template>
     <Layout>
+        <InformationHero />
+
         <div>
-            <SubPageHero heading="How does it work?" image="information-hero.jpg" :hasimg="true">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
-            </SubPageHero>
+            
             <h1>Information</h1>
 
             <button id="button" @click="toggler">What is the date?</button>
@@ -17,12 +17,12 @@
 
 <script>
 import StartVolunteering from '~/components/StartVolunteering.vue'
-import SubPageHero from '~/components/SubPageHero.vue'
+import InformationHero from '~/components/hero-components/InformationHero.vue'
 
     export default {
         components: {
             StartVolunteering,
-            SubPageHero
+            InformationHero
         },
         metaInfo() {
             return {

@@ -1,8 +1,8 @@
 <template>
     <Layout class="page-layout">
-        <SubPageHero heading="Stories from other Volunteers." image="colleagues.jpg" :hasimg="true">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.
-        </SubPageHero>
+        <StoriesHero />
+
+
         <div id="main-container">
             <h1>Stories</h1>
 
@@ -19,13 +19,13 @@
 
 <script>
 import StartVolunteering from '~/components/StartVolunteering.vue'
-import SubPageHero from '~/components/SubPageHero.vue'
+import StoriesHero from '~/components/hero-components/StoriesHero.vue'
 import Modal from '~/components/Modal.vue'
 
 export default {
     components: {
          StartVolunteering,
-         SubPageHero,
+         StoriesHero,
          Modal
     },
     metaInfo() {

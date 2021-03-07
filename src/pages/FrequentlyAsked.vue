@@ -1,20 +1,20 @@
 <template>
     <Layout>
-        <SubPageHero heading="Useful Answers." :hasoverlay="false">
+        <ImagelessHero heading="Useful Answers.">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
-        </SubPageHero>
+        </ImagelessHero>
         
     </Layout>
 </template>
 
 <script>
-import SubPageHero from '~/components/SubPageHero.vue'
+import ImagelessHero from '~/components/hero-components/ImagelessHero.vue'
 
 export default {
-    components: {
-        SubPageHero
-    },
-    metaInfo() {
+   components: {
+       ImagelessHero
+   },   
+   metaInfo() {
         return {
             title: 'Frequently Asked Questions',
             titleTemplate: '%s | Helping Hands',
