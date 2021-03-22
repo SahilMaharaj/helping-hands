@@ -1,6 +1,7 @@
 ---
 title: San Francisco
 desc: This is the San Francisco city of the Vue Remark test.
+image: './images/san-francisco.jpg'
 ---
 
 ## Welcome to San Francisco

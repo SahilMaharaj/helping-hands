@@ -1,6 +1,7 @@
 ---
 title: Riverside
 desc: This is the Riverside city of the Vue Remark test.
+image: './images/riverside.jpg'
 ---
 
 

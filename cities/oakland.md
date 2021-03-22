@@ -1,6 +1,7 @@
 ---
 title: Oakland
 desc: This is the Oakland city of the Vue Remark test.
+image: './images/oakland.jpg'
 ---
 
 ## What is Lorem Ipsum?

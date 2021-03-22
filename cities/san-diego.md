@@ -1,6 +1,7 @@
 ---
 title: San Diego
 desc: This is the San Diego city of the Vue Remark test.
+image: './images/san-diego.jpg'
 ---
 
 ## Welcome to San Diego
