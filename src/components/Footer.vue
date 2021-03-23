@@ -21,7 +21,7 @@
                     <p><a href="#">Privacy Policy</a></p>
                 </div>
                 <div class="col-4">
-                    <g-image class="footer-logo" src="~/assets/images/helping-hands-logo-white.svg" width="200"></g-image>
+                    <g-image class="footer-logo" src="~/assets/images/helping-hands-logo-white.svg" width="200" height="25"></g-image>
                 </div>
             </div>
             <div class="copyright">
@@ -103,6 +103,8 @@
 
     .footer-logo {
         opacity: .2;
+        width: 200px;
+        height: auto;
     }
 
     .footer-logo:hover {
