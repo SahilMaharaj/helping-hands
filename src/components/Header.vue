@@ -4,7 +4,7 @@
             <header>
                 <div class="logo">
                     <g-link to="/"> 
-                        <g-image width="200" src="~/assets/images/helping-hands-logo.svg"></g-image>
+                        <g-image width="200" height="25" src="~/assets/images/helping-hands-logo.svg"></g-image>
                     </g-link>
                 </div>
                 <input type="checkbox" id="nav-toggle" class="nav-toggle" />
@@ -43,6 +43,7 @@
 
 .logo img {
     width: 200px;
+    height: auto;
 }
 
 .logo a {
