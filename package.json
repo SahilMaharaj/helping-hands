@@ -10,6 +10,7 @@
     "@gridsome/vue-remark": "^0.2.1",
     "gridsome": "^0.7.19",
     "gridsome-plugin-flexsearch": "^1.0.1",
-    "nprogress": "^0.2.0"
+    "nprogress": "^0.2.0",
+    "vue-server-renderer": "^2.6.11"
   }
 }
