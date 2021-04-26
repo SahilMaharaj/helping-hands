@@ -129,6 +129,7 @@ import CitiesHero from '~/components/hero-components/CitiesHero.vue'
         margin-top: 20px;
         font-size: 19px;
         line-height: 29px;
+        color: #333;
     }
 
     .cities-list ul {

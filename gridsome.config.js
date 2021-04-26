@@ -26,6 +26,15 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Team', // Required
+        baseDir: './team', // Where .md files are located
+        pathPrefix: '/team-members', // Add route prefix. Optional
+        template: './src/templates/Team.vue', // Optional
+      }
+    },
+    {
       use: 'gridsome-plugin-flexsearch',
       options: {
         searchFields: ['title', 'desc'],

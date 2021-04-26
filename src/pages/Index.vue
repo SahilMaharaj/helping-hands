@@ -35,7 +35,7 @@
     <section id="how-it-works">
       <div class="how-it-works-cont">
         <div class="title-wrapper">
-          <div class="small-uppercase">Need More Information?</div>``
+          <div class="small-uppercase">Need More Information?</div>
           <h2 class="heading">How it Works.</h2>
         </div>
         <g-image class="bg-shape" src="~/assets/images/curvy-bkg-shape.svg"></g-image>
@@ -406,10 +406,6 @@ export default {
       background-color: #8c3396;
     }
 
-
-/* Once you reach a smaller screen size add more padding to the how it works section and then use the padding and margin-top on the single story section to adjust spacing */
-
-   
 /*----- MEDIA QUERIES -----*/
   @media all and (max-width : 991px) {
     .search-text-positioning {

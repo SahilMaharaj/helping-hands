@@ -8,16 +8,6 @@
     </Layout>
 </template>
 
-<page-query>
-query Cities ($path: String!) {
-  cities: cities (path: $path) {
-    title
-    desc
-    path
-  }
-}
-</page-query>
-
 
 <script>
     export default {
