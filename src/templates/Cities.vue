@@ -8,12 +8,15 @@
     </Layout>
 </template>
 
-
-<script>
-    export default {
-        
-    }
-</script>
+<page-query>
+query Cities ($path: String!) {
+  cities: cities (path: $path) {
+    title
+    desc
+    path
+  }
+}
+</page-query>
 
 <style>
  
