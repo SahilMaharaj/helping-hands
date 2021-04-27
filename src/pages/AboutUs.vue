@@ -178,7 +178,6 @@ export default {
 
   .team-image {
     width: 100%;
-    height: 340px;
   }
 
   .image-roll {
