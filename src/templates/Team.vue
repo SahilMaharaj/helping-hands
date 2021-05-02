@@ -2,7 +2,7 @@
     <Layout>
         <div>
             <h1>{{ $page.teams.title }}</h1>
-            <p>{{$page.teams.role}}</p>
+            <p>{{ $page.teams.role }}</p>
         </div>
     </Layout>
 </template>
@@ -18,12 +18,6 @@ query TeamMembers ($path: String!) {
 </page-query>
 
 
-<script>
-    export default {
-        
-    }
-</script>
-
-<style>
+<style scoped>
  
 </style>

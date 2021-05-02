@@ -13,11 +13,25 @@
         <p>Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus.</p>
       </div>
     </div>
+  </section>
 
     <div class="masonry-items">
-      Content goes here.
+      <div class="image-container">
+        <g-image class="team-comms" src="~/assets/images/team-communication.jpg"></g-image>
+        <g-image class="video-call" src="~/assets/images/team-video-call.jpg"></g-image>
+      </div>
+      <div class="image-text">
+        <g-image class="camera-crew" src="~/assets/images/camera-crew-discussion.jpg"></g-image>
+
+        <div class="content-block">
+          <p class="quote">"We love to give other people the oppurtunity to grow"</p>
+          <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+          <g-image class="dark-dots" src="~/assets/images/dark-dots.svg"></g-image>
+        </div>
+
+      </div>
     </div>
-  </section>
+  
     <div class="meet-our-team">
       <div class="container">
         <div class="centered-title">
@@ -146,6 +160,75 @@ export default {
         color: #333;
   }
 
+  .masonry-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  .image-container, .image-text {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .masonry-items img {
+    width: 100%;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .team-comms {
+    height: 300px;
+    object-fit: cover;
+    border-left: 5px solid #38ac8d;
+  }
+
+  .video-call {
+    height: 420px;
+    object-fit: cover;
+    border-left: 5px solid #8c3396;
+  }
+
+  .camera-crew {
+    height: 370px;
+    object-fit: cover;
+    border-left: 5px solid #ff4043;
+  }  
+
+  .content-block {
+    position: relative;
+    overflow: hidden;
+    padding: 56px;
+    background-color: #e4f5f0;
+    border-left: 5px solid #38ac8d;
+  }
+
+  .quote {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #45164b;
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .caption {
+    color: #333;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+  }
+
+  .dark-dots {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: -50%;
+    bottom: -130%;
+    height: 500px;
+    opacity: 0.04;
+  }
+
   .meet-our-team {
     padding-bottom: 90px;
     position: relative;
@@ -236,6 +319,37 @@ export default {
       font-size: 43px;
       line-height: 50px;
     }
+
+    .masonry-items {
+      padding: 0 50px;
+    }
+
+    .masonry-items img {
+      margin-bottom: 20px;
+    }
+
+    .image-container, .image-text {
+      padding: 0 10px;
+    }
+
+    .team-comms {
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .video-call {
+      height: 360px;
+      object-fit: cover;
+    }
+
+    .camera-crew {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .content-block {
+      padding: 30px 35px;
+    }
   }
 
   @media all and (max-width: 767px) {
@@ -253,6 +367,19 @@ export default {
       padding: 30px;
       font-size: 14px;
       text-align: center;
+    }
+
+    .masonry-items {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .masonry-items img {
+      margin-bottom: 10px;
+    }
+
+    .image-container, .image-text {
+      padding: 0;
     }
   }
 
@@ -276,6 +403,11 @@ export default {
     .centered-title p {
       font-size: 18px;
       line-height: 28px;
+    }
+
+    .team-comms, .video-call, .camera-crew {
+      height: 170px;
+      object-fit: cover;
     }
 
     .team-image {

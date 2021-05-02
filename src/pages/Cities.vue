@@ -33,9 +33,7 @@
                         </ul>
                     </div>                    
                 </div>
-            </section>
-
-                       
+            </section>                       
             
             <StartVolunteering />
         </div>
