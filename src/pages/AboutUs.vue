@@ -14,7 +14,6 @@
       </div>
     </div>
   </section>
-
     <div class="masonry-items">
       <div class="image-container">
         <g-image class="team-comms" src="~/assets/images/team-communication.jpg"></g-image>
@@ -24,11 +23,10 @@
         <g-image class="camera-crew" src="~/assets/images/camera-crew-discussion.jpg"></g-image>
 
         <div class="content-block">
-          <p class="quote">"We love to give other people the oppurtunity to grow"</p>
+          <p class="quote">"We loves to give other people the oppurtunity to grow"</p>
           <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
           <g-image class="dark-dots" src="~/assets/images/dark-dots.svg"></g-image>
         </div>
-
       </div>
     </div>
   
@@ -434,8 +432,5 @@ export default {
     section {
       padding-top: 50px;
     }
-  }
-
-
-  
+  }  
 </style>
