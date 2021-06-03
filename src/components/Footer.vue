@@ -25,7 +25,7 @@
                 </div>
             </div>
             <!--<div class="copyright">
-                Built by <a target="_blank" title="Sahil Maharaj LinkedIn Profile" href="https://www.linkedin.com/in/sahil-maharaj/">Sahil Maharaj</a>-->
+                Built by <a target="_blank" title="Sahil Maharaj LinkedIn Profile" href="https://www.linkedin.com/in/sahil-maharaj/">Sahil Maharaj</a>->
             </div>
         </div>
     </footer>
