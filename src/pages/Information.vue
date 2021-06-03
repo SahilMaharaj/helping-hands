@@ -55,7 +55,8 @@ import InformationHero from '~/components/hero-components/InformationHero.vue'
         computed: {
             getDate() {
                 const d = new Date();
-                const showDate = d.getDate() + "/" + d.getMonth() + 1 + "/" + d.getFullYear();
+                const month = d.getMonth() + 1
+                const showDate = d.getDate() + "/" + month + "/" + d.getFullYear();
                 return showDate;
             }            
         },
