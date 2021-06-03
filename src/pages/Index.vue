@@ -115,7 +115,7 @@ export default {
   metaInfo() {
     return {
       title: 'Helping Hands',
-      titleTemplate: '%s | Sahil Maharaj',
+      titleTemplate: '%s | Vue',
       meta: [
         {
           name: 'description',
