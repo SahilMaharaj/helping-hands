@@ -24,9 +24,7 @@
                     <g-image class="footer-logo" width="200" height="25" src="~/assets/images/helping-hands-logo-white.svg"></g-image>
                 </div>
             </div>
-            <!--<div class="copyright">
-                Built by <a target="_blank" title="Sahil Maharaj LinkedIn Profile" href="https://www.linkedin.com/in/sahil-maharaj/">Sahil Maharaj</a>->
-            </div>
+            
         </div>
     </footer>
 </template>
